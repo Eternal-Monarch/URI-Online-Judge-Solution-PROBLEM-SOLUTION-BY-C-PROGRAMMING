@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int
+main () 
+{
+  
+float k, a, b, c, d;
+  
+ 
+ 
+scanf ("%f", &b);
+  
+scanf ("%f", &c);
+  
+ 
+a = (b*c);
+  
+k = (a / 12);
+  
+printf ("%.3lf\n", k);
+  
+return 0;
+
+ 
+}
