@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <math.h>
+float
+main ()
+{
+  float a, b, c, result, p, p2, u = (0.5), result2;
+  scanf ("%f %f %f", &a, &b, &c);
+  p = ((b * b) - (4 * a * c));
+  p2 = pow (p, u);
+   if(a/(int)a==1  && b/(int)b ==1 && c/(int)c ==1)
+  {
+      printf("Impossivel calcular\n");
+  }
+else
+ {
+  p = ((b * b) - (4 * a * c));
+  p2 = pow (p, u);
+  
+  result = ((-b) + (p2)) / (2 * a);
+  result2 = ((-b) - (p2)) / (2 * a);
+  printf ("R1 = %0.5f\n", result);
+  printf ("R1 = %0.5f\n", result2);
+ }
+  return 0;
+}
