@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include<math.h>
+double
+main ()
+{
+  double a, b, c, d, e, formula1, formula2, result;
+  //floating nubmer scaaner used long float 
+  scanf ("%lf %lf %lf", &a, &b, &c);
+  //root
+  if(result =  ((b * b) - (4 * a * c))<0||a==0)
+  {
+  printf("Impossivel calcular");
+  }
+  //formula implented
+else
+  {    
+  e=sqrt(result);
+  
+     {
+     
+      formula1 = ((-b) + (e)) / (2 * a);
+      formula2 = ((-b) - (e)) / (2 * a);
+      //printing result
+    
+      printf ("R1 = %.5lf\n", formula1);
+      printf ("R2 = %.5lf\n", formula2);
+    
+     }
+  }
+      return 0;
+}
+
+
+
+
+
+
