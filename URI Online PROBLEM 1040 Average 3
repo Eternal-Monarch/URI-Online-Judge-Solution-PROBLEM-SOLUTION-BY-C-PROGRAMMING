@@ -1,0 +1,44 @@
+#include<stdio.h>
+float
+main ()
+{
+  float a, b, c, d, e, formula,store;
+  scanf ("%f %f %f %f", &a, &b, &c, &d);
+  float result = (a + b + c + d) / 4;
+  printf ("Media: %.1f\n", result);
+
+  if (result == 7.0 || result > 7.00)
+    {
+      printf ("Aluno aprovado\n");
+
+    }
+  else if (result < 5.0)
+    {
+      printf ("Aluno reprovado\n");
+
+    }
+  //If the average was between 5.0 and 6.9, including these, the program must print the message "Aluno em exame." (In exam student).
+  else if (result >= 5.1 && result <= 6.9)	//setting range
+    {
+      scanf ("%f", &e);
+
+      printf ("Aluno em exame\n");
+      printf ("Nota do exame:%.1f\n", e);	//marks 6.4
+      formula = (result + e) / (2);
+      if (formula >= 5.0)
+	{
+	  printf ("Aluno aprovado");
+
+	}
+      else if (formula <= 4.9)
+	{
+	  printf ("Aluno reprovado\n");
+	}
+	store=(result + formula) / (2);
+      printf ("Media final:%.1f", store);
+
+      // else
+
+      return 0;
+    }
+}
