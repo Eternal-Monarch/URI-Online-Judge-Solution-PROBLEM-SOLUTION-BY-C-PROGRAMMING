@@ -39,7 +39,7 @@ main ()
       printf ("Reajuste ganho: %.2f\n", c - a);
       printf ("Em percentual: 4%\n");
     }
-    
+    return 0;
      
 
 }
