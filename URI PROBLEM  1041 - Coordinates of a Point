@@ -7,6 +7,14 @@ float main()
     {
         printf("Origem\n");
     }
+    else if(a==0)
+    {
+        printf("Eixo Y\n");
+    }
+    else if(b==0)
+    {
+        printf("Eixo X\n");
+    }
     else if(a>0 && b>0)
     {
         printf("Q1");
@@ -24,5 +32,4 @@ float main()
         printf("Q4");
     }
     return 0;
-    
 }
